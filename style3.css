@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro{
+    width: 500px;
+    height: 600px;
+    border: 10px solid black;
+}
+
+.superior{
+    display: flex;
+    height: 66.7%;
+}
+
+.inferior{
+    display: flex;
+    height: 33.3%;
+}
+
+.cont1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.cont2{
+    display: flex;
+    height: 50%;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 0px solid black;
+}
+
+.cont3{
+    display:flex;
+    width: 60%;
+}
+
+.cont4{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+}
+
+.cont5{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+}
+
+.box1{
+    float: left;
+    width: 60%;
+    background-color: #e9432e;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box2{
+    background-color: #fed62c;
+    height: 50%;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.box3,.box4{
+    flex-grow: 1;
+    background-color: white;
+    border-bottom: 5px solid black;
+}
+
+.box3{
+    border-right: 5px solid black;
+}
+
+.box4{
+    border-left: 5px solid black;
+}
+
+.box5{
+    flex-grow: 2;
+    background-color: black;
+    color: white;
+}
+
+.box6{
+    flex-grow: 1;
+    background-color: #ced6dd;
+    border-bottom: 5px solid black;
+}
+
+.box7{
+    flex-grow: 1;
+    background-color: #ced6dd;
+    border-top: 5px solid black;
+}
+
+.box8{
+    background-color: white;
+    height: 50%;
+    border-bottom: 5px solid black;
+}
+
+.box9{
+    background-color: #0f4480;
+    height: 50%;
+    border-top: 5px solid black;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.texto{
+    display: flex;
+}
