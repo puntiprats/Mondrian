@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    background-color: violet;
+}
+
+.superior {
+    width: 100%;
+    height: 67%;
+    display: flex;
+}
+
+.rojo {
+    background-color: red;
+    width: 60%;
+    height: 100%;
+    border: 10px solid black;
+}
+
+.supDer {
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+
+.amarillo {
+    background-color: yellow;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.blancos {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.blanco {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+}
+
+
+.inferior {
+    width: 100%;
+    height: 33%;
+    background-color: pink;
+    display: flex;
+}
+
+.infIzq {
+    background-color: green;
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.infDer {
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+
+.negro {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.celestes {
+    background-color: lightblue;
+    width: 50%;
+    height: 100%;
+}
+
+.celeste {
+    background-color: lightblue;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.blanco2 {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.azul {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+@keyframes moverRoja {
+    0% {
+        transform: translateX(0);
+        height: 100%;
+    }
+
+    50% {
+        transform: translateX(50px);
+        height: 25%;
+    }
+
+    100% {
+        transform: translateX(200px);
+        height: 100%;
+        background-color: rgb(43, 226, 55);
+    }
+}
+
+@keyframes moverSup {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 33%;
+    }
+}
+
+@keyframes rotarInf {
+    0% {
+        transform: rotate(0deg);
+        bottom:0;
+    }
+    100% {
+        transform: rotate(180deg);
+        bottom: 67%;
+    }
+}
+
+@keyframes moverSupder {
+    0% {
+        transform: translateX(0);
+        left: 10;
+        border-left: 10px solid black;
+    }
+    100% {
+        transform: translateX(-300px);
+        left: 0;
+        border-left: 10px solid black;
+    }
+
+}
+
+.superior {
+    position: relative;
+    animation: moverSup 3s ease-in-out forwards;
+}
+
+.inferior {
+    position: relative;
+    animation: rotarInf 5s ease-in-out forwards;
+}
+
+.rojo {
+    animation: moverRoja 3s ease-in-out forwards;
+}
+
+.supDer {
+    position: relative;
+    animation: moverSupder 3s ease-in-out forwards;
+}

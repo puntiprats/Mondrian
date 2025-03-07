@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    background-color: violet;
+}
+
+.superior {
+    width: 100%;
+    height: 67%;
+    display: flex;
+}
+
+.rojo {
+    background-color: red;
+    width: 60%;
+    height: 100%;
+    border: 10px solid black;
+}
+
+.supDer {
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+
+.amarillo {
+    background-color: yellow;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.blancos {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.blanco {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+}
+
+
+.inferior {
+    width: 100%;
+    height: 33%;
+    background-color: pink;
+    display: flex;
+}
+
+.infIzq {
+    background-color: green;
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.infDer {
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+
+.negro {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.celestes {
+    background-color: lightblue;
+    width: 50%;
+    height: 100%;
+}
+
+.celeste {
+    background-color: lightblue;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.blanco2 {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.azul {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+@keyframes moverRoja {
+    from    {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+        border: none;
+    }
+}
+
+.rojo:hover{
+    animation: moverRoja 10s ease-in-out forwards;
+}
